@@ -1,0 +1,9 @@
+<section class="about container {{ bemMix }}">
+	<h1 class="visually-hidden">биография</h1>
+	<div class="about__content">
+		{{ content }}
+	</div>
+	<p class="about__image">
+		{% include 'picture.twig' with image %}
+	</p>
+</section>

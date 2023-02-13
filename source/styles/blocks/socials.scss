@@ -1,0 +1,38 @@
+.socials {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 11px;
+	padding: 0;
+	list-style: none;
+}
+
+.socials__item {
+	flex-shrink: 0;
+}
+
+.socials__link {
+	display: block;
+	background-color: $color-white;
+	border-radius: 50%;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 25px;
+		height: 25px;
+		background-color: $color-black;
+	}
+
+	&--vk::before {
+		@include graphic-icon("vk");
+	}
+
+	&--instagram::before {
+		@include graphic-icon("instagram");
+	}
+
+	&--telegram::before {
+		@include graphic-icon("telegram");
+	}
+}

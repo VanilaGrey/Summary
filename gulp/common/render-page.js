@@ -75,14 +75,13 @@ export default async (sourceName, payload = {}) => {
 				code = (await htmlnano.process(code, minConfig)).html;
 			}
 		}
-	} catch ({ message }) {
-		console.error(message);
+	} catch (err) {
+		error = err.message || err;
+		console.error(error);
 
 		if (isTest) {
 			process.exitCode = 1;
 		}
-
-		error = message;
 	}
 
 	return { code, error };

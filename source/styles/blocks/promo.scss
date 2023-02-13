@@ -1,0 +1,13 @@
+.promo__greetings {
+	@include visibility-a11y;
+}
+
+.promo__image {
+	margin: 100px 0 20px;
+}
+
+.promo__text {
+	margin: 0 0 50px;
+	padding: 10px;
+	text-align: center;
+}

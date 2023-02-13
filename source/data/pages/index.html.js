@@ -1,6 +1,17 @@
 export default ({ getImages }) => ({
+	choice: {
+		list: [
+			{
+				title: 'Обо мне',
+				url: 'about.html'
+			},
+			{
+				title: 'Портфолио',
+				url: '#!'
+			}
+		]
+	},
 	description: 'Главная страница сайта',
-	designation: '<p>Сайт-визитка фронтенд разработчика <strong>VanillaGrey</strong></p>',
 	promo: {
 		content: `Привет, дорогой друг, добро пожаловать на сайт-визитку фронтенд-разработчика VanillaGrey!`,
 		heading: 'привествие',
