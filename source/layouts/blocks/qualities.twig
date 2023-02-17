@@ -1,0 +1,10 @@
+<section class="qualities container {{ bemMix }}">
+	<h2 class="qualities__heading">{{ data.heading }}</h2>
+	<p class="qualities__description">{{ data.description }}</p>
+	{% for qualit in data.list %}
+		<div class="qualities__list">
+			<p class="qualities__label">{{ qualit.label }}</p>
+			<ul class="qualities__item">{{ qualit.content }}</ul>
+		</div>
+	{% endfor %}
+</section>

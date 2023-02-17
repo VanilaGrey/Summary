@@ -1,5 +1,5 @@
 export default ({ pageName }) => ({
-	designation: '<p>Сайт-визитка фронтенд разработчика <strong>VanillaGrey</strong></p>',
+	designation: 'Сайт-визитка фронтенд разработчика <strong>VanillaGrey</strong>',
 	getImages(filename, additions = {}) {
 		const image = Object.assign(additions, {
 			default: `images/${filename}.jpg`,

@@ -1,6 +1,12 @@
 {% extends '../main.twig' %}
 
 {% block main %}
-	{% include '../blocks/about.twig' with mainContent %}
+	{% include '../blocks/about.twig' with aboutContent %}
+
+	{% include '../blocks/work.twig' with workContent %}
+
+	{% include '../blocks/qualities.twig' with {
+		data: qualities,
+	} %}
 
 {% endblock %}
