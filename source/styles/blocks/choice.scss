@@ -1,5 +1,6 @@
 .choice {
-	margin: 0;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 .choice__list {
@@ -9,10 +10,11 @@
 	text-decoration: none;
 }
 
-.choice__item {
+.choice__link {
 	margin: 0 0 20px;
 	padding: 20px;
 	list-style-type: none;
+	text-decoration: none;
 	text-align: center;
 	border: 3px solid $color-red;
 	border-radius: 5px;
@@ -31,8 +33,4 @@
 	100% {
 		opacity: 1;
 	}
-}
-
-.choice__link {
-	text-decoration: none;
 }
