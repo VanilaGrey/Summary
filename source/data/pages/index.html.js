@@ -7,7 +7,7 @@ export default ({ getImages }) => ({
 			},
 			{
 				title: 'Портфолио',
-				url: '#!'
+				url: 'portfolio.html'
 			}
 		]
 	},

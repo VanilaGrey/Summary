@@ -1,9 +1,14 @@
 .choice {
-	max-width: 500px;
-	margin: 0 auto;
+	padding: 20px;
 }
 
 .choice__list {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.choice__item {
 	display: grid;
 	grid-template-columns: 1fr;
 	padding: 0;

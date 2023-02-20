@@ -1,15 +1,19 @@
+.promo {
+	padding: 50px;
+}
+
 .promo__greetings {
 	@include visibility-a11y;
 }
 
 .promo__image {
-	margin: 50px 0 20px;
+	margin: 0;
 	text-align: center;
 }
 
 .promo__text {
 	max-width: 500px;
-	margin: 0 auto 50px;
+	margin: 0 auto;
 	padding: 10px;
 	text-align: center;
 }

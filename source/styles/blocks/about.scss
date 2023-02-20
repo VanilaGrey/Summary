@@ -1,13 +1,19 @@
 .about {
 	display: grid;
-	grid-template-columns: 1fr 200px;
-	margin: 30px 15px;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	padding: 20px;
+}
+
+.about__container {
+	display: grid;
+	margin: auto;
 }
 
 .about__list {
 	display: flex;
 	flex-direction: column;
-	margin: 0 0 25px;
+	margin: 0 0 5px;
 	padding: 0;
 	list-style-type: none;
 	text-align: start;

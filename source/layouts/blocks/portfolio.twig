@@ -1,0 +1,24 @@
+<section class="portfolio {{ bemMix }}">
+	<div class="container">
+		<h1 class="portfolio__heading">{{ heading }}</h1>
+
+		<ul class="portfolio__items">
+			{% for item in list %}
+				<li class="portfolio__item">
+					<div class="portfolio__content">
+						<h2 class="portfolio__item-heading">{{ item.heading }}</h2>
+						{{ item.content }}
+					</div>
+					<div class="portfolio__content">
+						<p class="portfolio__item-languages">{{ item.languages }}</p>
+					</div>
+					<div class="portfolio__content">
+						<p class="portfolio__item-languages">{{ item.skills }}</p>
+					</div>
+
+					{% include 'picture.twig' with item.image %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

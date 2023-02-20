@@ -19,7 +19,7 @@ export default ({ getImages }) => ({
 	},
 	qualities: {
 		description: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."`,
-		heading: 'Про меня как веб-разработчика.',
+		heading: 'Про меня как веб-разработчика',
 		list: [
 			{
 				content: `<li>Адаптивность</li>
@@ -60,7 +60,7 @@ export default ({ getImages }) => ({
 			{
 				content: `<li>Растровая графика: оптимизация, webp. Растровые спрайты.</li>
 				<li>SVG: интеграция с растровой графикой и CSS, векторные символьные и фоновые спрайты.</li>`,
-				label: 'JavaScript'
+				label: 'Графика'
 			},
 			{
 				content: `<li>Скорость (концентрация на задаче, автоматизация, VS Code + плагины, хоткеи + drag-n-drop, emmet).</li>
@@ -73,9 +73,9 @@ export default ({ getImages }) => ({
 	},
 	workContent: {
 		content: `<ul>
-		<li>Иююль 2021 - ...: непрерывное обучение в HTML Academy.</li>
+		<li>Июль 2021 - ...: непрерывное обучение в HTML Academy.</li>
 		<li>Декабрь 2021 - январь 2023: студент Профессии "Фронтенд-разработчик".</li>
 	  </ul>`,
-		heading: 'Краткая биография.'
+		heading: 'Краткая биография'
 	}
 });

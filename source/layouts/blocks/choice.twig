@@ -1,9 +1,11 @@
 <div class="choice container">
-	<p class="choice__list">
+	<ul class="choice__list">
 		{% for item in list %}
+			<li class="choice__item">
 				<a class="choice__link btn" href="{{ item.url }}">
 					{{ item.title }}
 				</a>
+			</li>
 		{% endfor %}
-	</p>
+	</ul>
 </div>
