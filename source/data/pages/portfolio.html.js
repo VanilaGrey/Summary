@@ -4,28 +4,55 @@ export default ({ getImages }) => ({
 		list: [
 			{
 				content: '<p>Проект сделан хорошо</p>',
+				hardSkills: ['html', 'JavaScript', 'bem', 'desktop-first'],
 				heading: 'supergym',
-				languages: 'html, JavaScript',
-				skills: 'bem, desktop-first'
+				links: [
+					{
+						title: 'код на github',
+						url: '#!'
+					},
+					{
+						title: 'опубликованная версия',
+						url: '#!'
+					}
+				]
 			},
 			{
 				content: '<p>Проект сделан хорошо</p>',
+				hardSkills: ['html', 'JavaScript', 'bem', 'desktop-first'],
 				heading: 'antarctic',
-				languages: 'html, JavaScript',
-				skills: 'bem, desktop-first'
+				links: [
+					{
+						title: 'код на github',
+						url: '#!'
+					},
+					{
+						title: 'опубликованная версия',
+						url: '#!'
+					}
+				]
 			},
 			{
 				content: '<p>Проект сделан хорошо</p>',
+				hardSkills: ['html', 'JavaScript', 'bem', 'desktop-first'],
 				heading: 'smart',
-				languages: 'html, JavaScript',
-				skills: 'bem, desktop-first'
+				links: [
+					{
+						title: 'код на github',
+						url: '#!'
+					},
+					{
+						title: 'опубликованная версия',
+						url: '#!'
+					}
+				]
 			}
-		].map(({ content, heading, languages, skills }, i) => ({
+		].map(({ content, heading, hardSkills, links }, i) => ({
 			content,
+			hardSkills,
 			heading,
 			image: getImages(`job-${i}`, { alt: `${heading}.` }),
-			languages,
-			skills,
+			links
 		}))
 	}
 });
