@@ -13,7 +13,6 @@
 
 .socials__link {
 	display: block;
-	background-color: $color-white;
 	border-radius: 50%;
 
 	&::before {
@@ -30,6 +29,10 @@
 
 	&--instagram::before {
 		@include graphic-icon("instagram");
+	}
+
+	&--github::before {
+		@include graphic-icon("github");
 	}
 
 	&--telegram::before {

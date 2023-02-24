@@ -1,12 +1,7 @@
 .container {
-	padding-right: 15px;
-	padding-left: 15px;
-
-	@include media-desktop {
-		max-width: 1250px;
-		margin-right: auto;
-		margin-left: auto;
-		padding-right: 45px;
-		padding-left: 45px;
-	}
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 25px;
+	padding-left: 25px;
 }

@@ -53,8 +53,7 @@ export default ({ getImages }) => ({
 			{
 				content: `<li>ES6.</li>
 				<li>ООП.</li>
-				<li>Минификация</li>
-				<li>legacy</li>`,
+				<li>Минификация</li>`,
 				label: 'JavaScript'
 			},
 			{

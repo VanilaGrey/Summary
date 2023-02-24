@@ -1,28 +1,26 @@
 <section class="portfolio {{ bemMix }}">
-	<div class="container">
-		<h1 class="portfolio__heading">{{ heading }}</h1>
+	<h1 class="portfolio__heading">{{ heading }}</h1>
 
-		<ul class="portfolio__list">
-			{% for item in list %}
-				<li class="portfolio__item">
-					{% include 'picture.twig' with item.image %}
+	<ul class="portfolio__list">
+		{% for item in list %}
+			<li class="portfolio__item">
+				{% include 'picture.twig' with item.image %}
 
-					<div class="portfolio__content">
-						<h2 class="portfolio__item-heading">{{ item.heading }}</h2>
-						{{ item.content }}
-					</div>
-					<ul class="portfolio__skills">
-						{% for skill in item.hardSkills %}
-							<li class="portfolio__skill">{{ skill }}</li>
-						{% endfor %}
-					</ul>
-					<div class="portfolio__links">
-						{% for link in item.links %}
-							<a class="portfolio__link" href="{{ link.url }}">{{ link.title }}</a>
-						{% endfor %}
-					</div>
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
+				<div class="portfolio__content">
+					<h2 class="portfolio__item-heading">{{ item.heading }}</h2>
+					{{ item.content }}
+				</div>
+				<ul class="portfolio__skills">
+					{% for skill in item.hardSkills %}
+						<li class="portfolio__skill">{{ skill }}</li>
+					{% endfor %}
+				</ul>
+				<div class="portfolio__links">
+					{% for link in item.links %}
+						<a class="portfolio__link" href="{{ link.url }}">{{ link.title }}</a>
+					{% endfor %}
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
 </section>

@@ -1,5 +1,5 @@
 export default ({ pageName }) => ({
-	designation: 'Сайт-визитка фронтенд разработчика <strong>VanillaGrey</strong>',
+	designation: 'Сайт-визитка фронтенд разработчика <a href="https://htmlacademy.ru/profile/id1962371">VanilaGrey</a>',
 	getImages(filename, additions = {}) {
 		const image = Object.assign(additions, {
 			default: `images/${filename}.jpg`,
@@ -28,6 +28,11 @@ export default ({ pageName }) => ({
 			id: 'telegram',
 			title: 'Я в телеграме',
 			url: 'https://vk.com/deniska.true'
+		},
+		{
+			id: 'github',
+			title: 'Я в гитхабе',
+			url: 'https://github.com/VanilaGrey'
 		}
 	],
 });
