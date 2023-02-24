@@ -49,7 +49,7 @@ export default ({ getImages }) => ({
 			},
 			{
 				content: '<p>Описание проекта</p>',
-				hardSkills: ['html', 'JavaScript', 'bem', 'desktop-first'],
+				hardSkills: ['html', 'JavaScript', 'bem', 'bem', 'bem', 'bem', 'bem', 'bem', 'bem', 'desktop-first'],
 				heading: 'antarctic',
 				links: [
 					{

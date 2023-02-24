@@ -1,0 +1,13 @@
+<div class="buttons">
+	{% if pageName != 'index.html' %}
+		<ul class="buttons__list">
+			{% for item in list %}
+				<li class="buttons__item">
+					<a class="choice__link btn" href="{{ item.url }}">
+						{{ item.title }}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+</div>

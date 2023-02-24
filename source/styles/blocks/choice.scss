@@ -13,6 +13,11 @@
 	grid-template-columns: 1fr;
 	padding: 0;
 	text-decoration: none;
+
+	:hover {
+		color: $color-dark-red;
+		background-color: $color-white-03;
+	}
 }
 
 .choice__link {
@@ -21,10 +26,10 @@
 	list-style-type: none;
 	text-decoration: none;
 	text-align: center;
-	border: 3px solid $color-red;
-	border-radius: 5px;
+	border: 3px solid $color-white;
+	border-radius: 50px;
 	opacity: 0;
-	transition: 2s;
+	transition: 1s;
 	animation: show 2s 1;
 	animation-delay: 5.6s;
 	animation-fill-mode: forwards;
