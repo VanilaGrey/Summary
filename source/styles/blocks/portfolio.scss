@@ -32,11 +32,12 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: 120px;
+	bottom: 0;
 	left: 0;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
+	height: 231px;
 	padding: 28px 25px 35px;
 	overflow-y: auto;
 	color: $color-white;
@@ -90,6 +91,7 @@
 }
 
 .portfolio__content:hover,
+.portfolio__content:focus,
 .portfolio__content:focus-within {
 	max-height: 100%;
 	color: $color-white;
@@ -102,7 +104,7 @@
 	}
 }
 
-.portfolio__content:not(:hover):not(:focus-within) {
+.portfolio__content:not(:hover):not(:focus-within):not(:focus) {
 	p {
 		@include visibility-a11y;
 	}

@@ -1,18 +1,4 @@
 export default ({ pageName }) => ({
-	buttons: [
-		{
-			title: 'На главную',
-			url: 'index.html'
-		},
-		{
-			title: 'портфолио',
-			url: 'portfolio.html'
-		},
-		{
-			title: 'обо мне',
-			url: 'about.html'
-		}
-	],
 	designation:
 		'Сайт-визитка фронтенд разработчика <a href="https://htmlacademy.ru/profile/id1962371">VanilaGrey</a>',
 	getImages(filename, additions = {}) {
