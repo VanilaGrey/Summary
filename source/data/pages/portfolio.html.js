@@ -1,7 +1,7 @@
 export default ({ getImages, pages: [, ringPage] }) => ({
 	jobs: [
 		{
-			description: 'Описание проекта Описание проекта Описание проекта',
+			description: 'Вёрстка лендинга фитнес-центра в Омске',
 			hardSkills: [
 				'html',
 				'pixelperfect ',
@@ -19,7 +19,7 @@ export default ({ getImages, pages: [, ringPage] }) => ({
 			name: 'supergym'
 		},
 		{
-			description: 'Описание проекта Описание проекта Описание проекта',
+			description: 'Вёрстка лендинга «Круизы в Антарктику»',
 			hardSkills: [
 				'html',
 				'pixelperfect',
@@ -41,7 +41,7 @@ export default ({ getImages, pages: [, ringPage] }) => ({
 			name: 'antarctic'
 		},
 		{
-			description: 'Описание проекта',
+			description: 'Вёрстка лендинга по производству печатный плат',
 			hardSkills: [
 				'JavaScript',
 				'API',
@@ -55,7 +55,7 @@ export default ({ getImages, pages: [, ringPage] }) => ({
 			name: 'smart-device'
 		},
 		{
-			description: 'Описание проекта',
+			description: 'Экзаменационный проект в HTMLAcademy Drink2Go. Drink2Go— это интернет-магазин по продаже кофейных напитков. Удобная сортировка по странам произрастания зерна и концентрации молока поможет выбрать идеальный напиток. Количество позиций для заказа не ограничено.',
 			hardSkills: [
 				'twig',
 				'JavaScript',
@@ -80,7 +80,7 @@ export default ({ getImages, pages: [, ringPage] }) => ({
 			name: 'drink2go'
 		},
 		{
-			description: 'Описание проекта',
+			description: 'Учебный проект. Кексобукинг — сервис размещения объявлений о сдаче в аренду недвижимости в центре Токио. Пользователям предоставляется возможность размещать объявления о своей недвижимости или просматривать уже размещённые объявления.',
 			hardSkills: [
 				'twig',
 				'JavaScript',
@@ -107,7 +107,7 @@ export default ({ getImages, pages: [, ringPage] }) => ({
 			name: 'keksobooking'
 		},
 		{
-			description: 'Описание проекта',
+			description: 'Учебный проект. Создание сайта для мобильного приложения PINK',
 			hardSkills: [
 				'html',
 				'JavaScript',
@@ -133,7 +133,7 @@ export default ({ getImages, pages: [, ringPage] }) => ({
 			name: 'pink'
 		},
 		{
-			description: 'Описание проекта',
+			description: 'Первый учебный проект. Создание сайта небольшого городка в Аризоне - Седона!',
 			hardSkills: [
 				'twig',
 				'scss',
