@@ -8,17 +8,16 @@
 @import "common/fonts";
 @import "common/global";
 
-@import "blocks/about";
+@import "blocks/button";
+@import "blocks/choice";
 @import "blocks/page";
 @import "blocks/page-header";
-@import "blocks/promo";
-@import "blocks/choice";
-@import "blocks/socials";
-@import "blocks/btn";
+@import "blocks/section";
 @import "blocks/qualities";
+@import "blocks/socials";
+@import "blocks/tile";
 @import "blocks/work";
-@import "blocks/portfolio";
-@import "blocks/buttons";
 
-@import "common/utils";
 @import "common/container";
+@import "common/utils";
+@import "common/keyframes";

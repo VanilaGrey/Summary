@@ -1,7 +1,13 @@
 {% extends '../main.twig' %}
 
 {% block main %}
-	{% include '../blocks/promo.twig' with promo %}
+	<section class="section">
+		<h1 class="visually-hidden">{{ pageHeading }}</h1>
 
-	{% include '../blocks/choice.twig' with choice %}
+		<p class="section__image">
+			{% include '../blocks/picture.twig' with promo.image %}
+		</p>
+	</section>
+
+	{% include '../blocks/choice.twig' %}
 {% endblock %}

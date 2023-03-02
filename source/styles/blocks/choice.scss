@@ -1,46 +1,15 @@
 .choice {
-	padding: 20px;
-}
-
-.choice__list {
-	max-width: 500px;
-	margin: 0 auto;
-	padding: 0;
-}
-
-.choice__item {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: repeat(auto-fit, 250px);
+	justify-content: center;
+	gap: 10px 30px;
+	margin: 0 0 50px;
 	padding: 0;
-	text-decoration: none;
-
-	:hover {
-		color: $color-dark-red;
-		background-color: $color-white-03;
-	}
+	list-style: none;
+	opacity: 0;
+	animation: show 2s 5.6s forwards;
 }
 
 .choice__link {
-	margin: 0 0 20px;
-	padding: 20px;
-	list-style-type: none;
-	text-decoration: none;
-	text-align: center;
-	border: 3px solid $color-white;
-	border-radius: 50px;
-	opacity: 0;
-	transition: 1s;
-	animation: show 2s 1;
-	animation-delay: 5.6s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes show {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
+	display: block;
 }

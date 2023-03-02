@@ -33,11 +33,15 @@ const watch = () => {
 				const status = StatusCode[error.includes('Unable to find') ? 'NOT_FOUND' : 'ERROR'];
 				res.writeHead(status);
 
-				const { code: errorPageCode, error: errorPageError } = await renderPage(
-					`${status}.html.twig`,
-					{ error }
-				);
-				return res.end(errorPageError ? error : errorPageCode);
+				try {
+					const { code: errorPageCode } = await renderPage('404.html.twig', {
+						error: error.replace(/\[\d+?m/g, ''),
+						status
+					});
+					return res.end(errorPageCode);
+				} catch (secondaryError) {
+					return res.end(error);
+				}
 			}
 
 			return res.end(code);

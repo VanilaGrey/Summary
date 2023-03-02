@@ -1,7 +1,37 @@
 .page-header__designation {
-	max-width: 500px;
-	margin: 0 auto;
-	padding: 5px 0 0 5px;
-	font-size: 10px;
+	margin: 0 0 50px;
+	font-size: 22px;
+	line-height: 26px;
 	text-align: center;
+	color: $color-black;
+}
+
+.page-header__nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px 30px;
+	margin: 0 0 50px;
+	padding: 0 0 16px;
+	border-bottom: 1px solid $color-lightgrey;
+
+	@include media-tablet-desktop {
+		flex-direction: row;
+	}
+}
+
+.page-header__link {
+	text-decoration: none;
+	color: $color-black;
+
+	@include interactive-defaults;
+
+	@include media-mobile {
+		text-align: center;
+	}
+}
+
+.page-header__button {
+	min-width: 150px;
 }

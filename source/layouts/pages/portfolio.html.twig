@@ -1,7 +1,15 @@
 {% extends '../main.twig' %}
 
 {% block main %}
+	<section class="section">
+		<h1 class="section__heading">{{ pageHeading }}</h1>
 
-	{% include '../blocks/portfolio.twig' with jobs %}
-
+		<ul class="section__list">
+			{% for item in jobs %}
+				<li>
+					{% include '../blocks/work.twig' with item %}
+				</li>
+			{% endfor %}
+		</ul>
+	</section>
 {% endblock %}

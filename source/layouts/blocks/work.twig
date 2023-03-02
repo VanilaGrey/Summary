@@ -1,6 +1,21 @@
-<section class="work container {{ bemMix }}">
-	<h2 class="work__heading">{{ heading }}</h2>
-	<div class="work__content">
-		{{ content }}
-	</div>
-</section>
+<article class="work">
+	{% include 'picture.twig' with image %}
+
+	<h2 class="work__heading">{{ name }}</h2>
+	<p class="work__description">{{ description }}</p>
+
+	<ul class="work__tags">
+		{% for skill in hardSkills %}
+			<li class="work__tag">{{ skill }}</li>
+		{% endfor %}
+	</ul>
+
+	<ul class="work__links">
+		<li>
+			<a class="work__link button button--primary" href="https://github.com/vanilagrey/{{ name }}">Код на github</a>
+		</li>
+		<li>
+			<a class="work__link button" href="https://vanilagrey.github.io/{{ name }}">Опубликованная версия</a>
+		</li>
+	</ul>
+</article>

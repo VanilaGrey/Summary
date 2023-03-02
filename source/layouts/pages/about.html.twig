@@ -1,12 +1,11 @@
 {% extends '../main.twig' %}
 
 {% block main %}
-	{% include '../blocks/about.twig' with aboutContent %}
+	<section class="section">
+		<h1 class="section__heading">{{ pageHeading }}</h1>
 
-	{% include '../blocks/work.twig' with workContent %}
+		{% include '../blocks/about.twig' with aboutContent %}
+	</section>
 
-	{% include '../blocks/qualities.twig' with {
-		data: qualities,
-	} %}
-
+	{% include '../blocks/qualities.twig' with qualities %}
 {% endblock %}

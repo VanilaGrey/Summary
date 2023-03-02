@@ -1,3 +1,4 @@
 export default () => ({
-	description: 'Страница ошибок'
+	description: 'Страница ошибок',
+	pageHeading: 'Ошибка'
 });

@@ -1,6 +1,16 @@
+const pages = [
+	{
+		title: 'Портфолио',
+		url: 'portfolio.html'
+	},
+	{
+		title: 'Обо мне',
+		url: 'about.html'
+	}
+];
+
 export default ({ pageName }) => ({
-	designation:
-		'Сайт-визитка фронтенд разработчика <a href="https://htmlacademy.ru/profile/id1962371">VanilaGrey</a>',
+	designation: 'Сайт фронтенд-разработчика VanilaGrey',
 	getImages(filename, additions = {}) {
 		const image = Object.assign(additions, {
 			default: `images/${filename}.jpg`,
@@ -11,9 +21,10 @@ export default ({ pageName }) => ({
 
 		return image;
 	},
-	isIndex: pageName === 'index',
-	pixelperfect: JSON.stringify({ breakpoints: [320, 768, 1260], ext: 'jpg' }),
-	projectName: 'My project',
+	isIndex: pageName === 'index.html',
+	pages,
+	projectName: 'VanilaGrey',
+	ringPage: pages[0],
 	socials: [
 		{
 			id: 'vk',
@@ -29,6 +40,11 @@ export default ({ pageName }) => ({
 			id: 'telegram',
 			title: 'Я в телеграме',
 			url: 'https://t.me/viiiar'
+		},
+		{
+			id: 'htmlacademy',
+			title: 'Я в академии',
+			url: 'https://htmlacademy.ru/profile/id1962371'
 		},
 		{
 			id: 'github',

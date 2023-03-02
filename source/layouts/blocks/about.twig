@@ -1,18 +1,17 @@
-<section class="about container {{ bemMix }}">
-	<h1 class="visually-hidden">{{ heading }}</h1>
-	<div class="about__container">
-		{% for item in list %}
-			<ul class="about__list">
-				<li class="about__label">
-					{{ item.name }}
-				</li>
-				<li class="about__description">
-					{{ item.description }}
-				</li>
-			</ul>
+<div class="section__list section__list--tiles">
+	<dl class="tile">
+		{% for item in oneList %}
+			<dt class="tile__heading">{{ item.name }}</dt>
+			<dd class="tile__content">{{ item.description }}</dd>
 		{% endfor %}
-	</div>
-	<p class="about__image">
-		{% include 'picture.twig' with image %}
-	</p>
-</section>
+	</dl>
+
+	{% include '../blocks/picture.twig' with image %}
+
+	<dl class="tile">
+		{% for item in anotherList %}
+			<dt class="tile__heading">{{ item.name }}</dt>
+			<dd class="tile__content">{{ item.description }}</dd>
+		{% endfor %}
+	</dl>
+</div>

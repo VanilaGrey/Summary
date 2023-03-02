@@ -2,7 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 11px;
+	margin: 0;
 	padding: 0;
 	list-style: none;
 }
@@ -12,30 +12,37 @@
 }
 
 .socials__link {
-	display: block;
+	display: flex;
+	width: 48px;
+	height: 48px;
+	color: $color-blue;
 	border-radius: 50%;
+
+	@include interactive-transitions;
+
+	&:hover {
+		color: $color-darkblue;
+	}
+
+	@include interactive-focus {
+		color: $color-darkblue;
+	}
+
+	&:active {
+		color: $color-blue;
+	}
 
 	&::before {
 		content: "";
-		display: block;
 		width: 25px;
 		height: 25px;
-		background-color: $color-black;
+		margin: auto;
+		background-color: currentColor;
 	}
 
-	&--vk::before {
-		@include graphic-icon("vk");
-	}
-
-	&--instagram::before {
-		@include graphic-icon("instagram");
-	}
-
-	&--github::before {
-		@include graphic-icon("github");
-	}
-
-	&--telegram::before {
-		@include graphic-icon("telegram");
+	@each $alias in ("vk", "instagram", "github", "telegram", "htmlacademy") {
+		&--#{$alias}::before {
+			@include graphic-icon($alias);
+		}
 	}
 }

@@ -1,7 +1,11 @@
 <header class="page-header">
-	{% if pageName != 'index.html' %}
-		<p class="page-header__designation">
-			{{ designation }}
-		</p>
+	{% if isIndex %}
+		<p class="page-header__designation" data-interval-content="{{ designation }}" hidden></p>
+	{% else %}
+		<nav class="page-header__nav">
+			<a class="page-header__link" href="index.html">{{ designation }}</a>
+
+			<a class="page-header__button button button--primary" href="{{ ringPage.url }}">{{ ringPage.title }}</a>
+		</nav>
 	{% endif %}
 </header>

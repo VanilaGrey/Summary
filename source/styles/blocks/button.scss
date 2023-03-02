@@ -1,0 +1,55 @@
+.button {
+	box-sizing: border-box;
+	padding: 8px 16px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: inherit;
+	text-transform: uppercase;
+	text-decoration: none;
+	overflow-wrap: anywhere;
+	text-align: center;
+	color: $color-white;
+	background-color: $color-blue;
+	border: none;
+	border-radius: 4px;
+	outline-color: $color-blue;
+	cursor: pointer;
+	user-select: none;
+
+	@include interactive-transitions;
+
+	&:hover {
+		background-color: $color-darkblue;
+	}
+
+	@include interactive-focus {
+		background-color: $color-darkblue;
+	}
+
+	&:active {
+		color: rgba($color-white, 0.3);
+		background-color: $color-blue;
+	}
+
+	&--primary {
+		&:hover {
+			background-color: $color-darkbrown;
+		}
+
+		@include interactive-focus {
+			background-color: $color-darkbrown;
+		}
+
+		&,
+		&:active {
+			background-color: $color-brown;
+		}
+	}
+
+	&--big {
+		padding: 8px 50px;
+		font-size: 20px;
+		line-height: 36px;
+	}
+}

@@ -1,20 +1,8 @@
 export default ({ getImages }) => ({
-	choice: {
-		list: [
-			{
-				title: 'Обо мне',
-				url: 'about.html'
-			},
-			{
-				title: 'Портфолио',
-				url: 'portfolio.html'
-			}
-		]
-	},
 	description: 'Главная страница сайта',
+	designation: `Привет, дорогой друг! Добро пожаловать на сайт-визитку фронтенд-разработчика VanilaGrey!`,
+	pageHeading: 'Привествие',
 	promo: {
-		content: `Привет, дорогой друг! Добро пожаловать на сайт-визитку фронтенд-разработчика VanilaGrey!`,
-		heading: 'привествие',
-		image: getImages('avatar', { alt: 'Каким Вы можете стать благодаря нам.' })
+		image: getImages('avatar', { alt: 'Это я.' })
 	}
 });

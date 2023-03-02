@@ -2,6 +2,14 @@
 	position: relative;
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
+	box-sizing: border-box;
 	min-height: 100vh;
-	background-color: rgb(211, 211, 211);
+	padding-top: 50px;
+	padding-bottom: 16px;
+
+	&--inner {
+		padding-top: 24px;
+		background-color: $color-white;
+		box-shadow: 0 0 15px rgba($color-black, 0.2);
+	}
 }

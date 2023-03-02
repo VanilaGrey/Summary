@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ projectName }}</title>
-		<meta name="description" content="{{ description }}">
+		<title>{{ projectName ~ ' : ' ~ pageHeading }}</title>
+		{% if description %}
+			<meta name="description" content="{{ description }}">
+		{% endif %}
 		<link rel="stylesheet" href="{{ rootPath }}styles/main.css{{ version }}">
 
 		{% for weight in [400, 700] %}
@@ -12,25 +14,18 @@
 		{% endfor %}
 	</head>
 	<body>
-		<div class="page">
+		<div class="page {{ isIndex ?: 'page--inner' }} container">
 			{% include 'blocks/page-header.twig' %}
 
-			{% include 'blocks/buttons.twig' with buttons %}
 			<main>
 				{% block main %}{% endblock %}
 			</main>
+
 			{% include 'blocks/page-footer.twig' %}
 		</div>
 
 		{% block modal %}{% endblock %}
 
 		<script src="{{ rootPath }}scripts/main.js{{ version }}"></script>
-
-		{% if isDev %}
-			<script>
-				window.pixelperfect = {{ pixelperfect }};
-			</script>
-			<script src="https://efiand.github.io/pixelperfect-tool/pixelperfect.min.js"></script>
-		{% endif %}
 	</body>
 </html>

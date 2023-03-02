@@ -1,13 +1,5 @@
-.portfolio {
-	max-width: 1250px;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 25px;
-	padding-left: 25px;
-}
-
 .portfolio__heading {
-	text-align: center;
+	margin: 0 0 30px;
 }
 
 .portfolio__list {
@@ -75,8 +67,6 @@
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 22px;
-	color: $color-dark-blue;
-	background-color: $color-light-blue-05;
 	border: 1px solid transparent;
 	border-radius: 2em;
 }
@@ -84,10 +74,6 @@
 .portfolio__links {
 	display: grid;
 	justify-items: center;
-
-	a {
-		color: $color-dark-red;
-	}
 }
 
 .portfolio__content:hover,
@@ -95,7 +81,6 @@
 .portfolio__content:focus-within {
 	max-height: 100%;
 	color: $color-white;
-	background-color: $color-grey-07;
 	transform: scaleY(1);
 
 	h2,

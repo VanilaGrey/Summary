@@ -1,7 +1,11 @@
 {% extends '../main.twig' %}
 
 {% block main %}
-	{% if error %}
-		{{ error }}
-	{% endif %}
+	<section class="section">
+		<h1 class="section__heading">{{ pageHeading }}</h1>
+
+		{% if error %}
+			<p class="section__description">См. в терминале</p>
+		{% endif %}
+	</section>
 {% endblock %}
