@@ -1,7 +1,7 @@
 export default ({ getImages, pages: [, ringPage] }) => ({
 	jobs: [
 		{
-			description: 'Вёрстка лендинга фитнес-центра в Омске',
+			description: 'Вёрстка лендинга фитнес-центра в Омске.',
 			hardSkills: [
 				'html',
 				'pixelperfect ',
@@ -19,7 +19,7 @@ export default ({ getImages, pages: [, ringPage] }) => ({
 			name: 'supergym'
 		},
 		{
-			description: 'Вёрстка лендинга «Круизы в Антарктику»',
+			description: 'Вёрстка лендинга «Круизы в Антарктику».',
 			hardSkills: [
 				'html',
 				'pixelperfect',
@@ -41,7 +41,7 @@ export default ({ getImages, pages: [, ringPage] }) => ({
 			name: 'antarctic'
 		},
 		{
-			description: 'Вёрстка лендинга по производству печатный плат',
+			description: 'Вёрстка лендинга по производству печатный плат.',
 			hardSkills: [
 				'JavaScript',
 				'API',
@@ -107,7 +107,7 @@ export default ({ getImages, pages: [, ringPage] }) => ({
 			name: 'keksobooking'
 		},
 		{
-			description: 'Учебный проект. Создание сайта для мобильного приложения PINK',
+			description: 'Учебный проект. Создание сайта для мобильного приложения PINK.',
 			hardSkills: [
 				'html',
 				'JavaScript',
@@ -133,7 +133,7 @@ export default ({ getImages, pages: [, ringPage] }) => ({
 			name: 'pink'
 		},
 		{
-			description: 'Первый учебный проект. Создание сайта небольшого городка в Аризоне - Седона!',
+			description: 'Первый учебный проект. Создание сайта небольшого городка в Аризоне - Седона.',
 			hardSkills: [
 				'twig',
 				'scss',
