@@ -36,10 +36,10 @@
 	ul {
 		padding: 0 20px;
 	}
+}
 
-	&--about {
-		align-items: flex-start;
-	}
+.tile--left {
+	align-items: flex-start;
 }
 
 .tile__heading {
@@ -53,9 +53,14 @@
 
 .tile__content {
 	margin: 0;
+	text-align: left;
 	color: $color-black;
 
 	&:not(:last-child) {
 		margin-bottom: 30px;
+	}
+
+	&--centered {
+		text-align: center;
 	}
 }
