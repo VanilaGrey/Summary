@@ -45,6 +45,12 @@
 	}
 }
 
+.section__item {
+	&:hover {
+		box-shadow: 10px 5px 15px $color-blue;
+	}
+}
+
 .section__image {
 	max-width: 300px;
 	margin: 0 auto 50px;
